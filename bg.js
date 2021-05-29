@@ -1,17 +1,12 @@
 const body = document.querySelector("body");
 
-const IMG_NUMBER = 3;
-
-function handleImgLoad(){
-    console.log("finished loading")
-}
+const IMG_NUMBER = 4;
 
 function paintImage(imgNumber){
     const image = new Image();
-    img.src = `images/${imgNumber + 1}.jpg`;
-    image.classList.add("bgImg")
+    image.src = `img/${imgNumber + 1}.jpg`;
+    image.classList.add("bgImage")
     body.prepend(image);
-    
 }
 
 function genRandom(){
